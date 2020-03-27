@@ -4,12 +4,12 @@ var Stack = function() {
   var instance = {};
   instance.storage = {};
   instance.count = 0;
-  var extend = function(obj1, obj2) {
-    for (var key in obj2) {
-      obj1[key] = obj2[key];
-    }
-  };
-  extend(instance, stackMethods);
+  // var extend = function(obj1, obj2) {
+  //   for (var key in obj2) {
+  //     obj1[key] = obj2[key];
+  //   }
+  // };
+  _.extend(instance, stackMethods);
   return instance;
 };
 
