@@ -15,7 +15,20 @@ treeMethods.addChild = function(value) {
 };
 
 treeMethods.contains = function(target) {
-
+  var flag = false;
+  // some recursive function
+  var recursive = function(node) {
+    if (target === node.value) {
+      flag = true;
+      return flag;
+    }
+    // call some function on node
+    node.children.forEach(function(element) {
+      recursive(element);
+    });
+  };
+  recursive(this);
+  return flag;
 };
 
 
