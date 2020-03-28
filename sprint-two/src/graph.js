@@ -27,7 +27,6 @@ Graph.prototype.removeNode = function(node) {
 
 // Returns a boolean indicating whether two specified nodes are connected.  Pass in the values contained in each of the two nodes.
 Graph.prototype.hasEdge = function(fromNode, toNode) {
-  console.log(this.edges);
   if (this.edges[fromNode] === fromNode && this.edges[toNode] === toNode) {
     return true;
   }
@@ -65,7 +64,7 @@ Graph.prototype.forEachNode = function(cb) {
 };
 
 /*
- * Complexity: What is the time complexity of the above functions?
+ * Complexity: What is the time complexity of the above functions? AddNode: O(1) RemoveNode: O(1) Contains: O(1) AddEdge: O(n) RemoveEdge: O(1) forEachNode: O(n)
  */
 
 
