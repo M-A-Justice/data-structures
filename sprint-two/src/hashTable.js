@@ -50,7 +50,7 @@ HashTable.prototype.remove = function(k) {
 
 
 /*
- * Complexity: What is the time complexity of the above functions?
+ * Complexity: What is the time complexity of the above functions? Best Case: O(1) Worst Case: O(n)
  */
 
 
